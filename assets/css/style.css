@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* { /* zerando todos os componentes */
+    padding: 0; /*  preenchimento é o espaço entre a borda do elemento e seu conteúdo interno */
+    margin: 0; /* margem é o espaço entre os elementos próximos */
+    font-family: 'Inter', sans-serif; /* definindo a fonte que você importou e caso o navegador não interpreta fonte Inter usa o sans-serif no lugar */
+}
+
+header {
+    background-color: #24252a; /* fundo de um elemento */
+    box-shadow: 0px 3px 10px #464646; /* cria uma sombra ao redor do elemento, 0px: Define o deslocamento horizontal da sombra. Neste caso, não há deslocamento horizontal (a sombra está diretamente abaixo do elemento).
+    3px: Define o deslocamento vertical da sombra. Neste caso, a sombra é deslocada 3 pixels para baixo.
+    10px: Define o desfoque da sombra. Neste caso, a sombra é borrada por 10 pixels, o que cria uma aparência de suavização. 
+    #464646: Define a cor da sombra. */
+}
+
+.nav-bar {
+    display: flex; /* modelo de layout flexível ao elemento com a classe .nav-bar. Isso permite que os itens dentro da barra de navegação se ajustem dinamicamente com base no espaço disponível, facilitando o alinhamento e a distribuição dos itens. */
+    justify-content: space-between; /* alinha os itens dentro da barra de navegação horizontalmente e distribui o espaço restante entre eles. Isso significa que o primeiro item estará alinhado à esquerda, o último item estará alinhado à direita e o espaço restante entre os itens será distribuído igualmente. */
+    padding: 1.5rem 6rem; /* define o preenchimento (espaço interno) ao redor dos conteúdos dentro da barra de navegação. Os valores 1.5rem e 6rem definem o preenchimento superior/inferior e esquerdo/direito, respectivamente. Portanto, haverá 1.5 vezes o tamanho da unidade de medida "rem" de preenchimento acima e abaixo dos conteúdos, e 6 vezes o tamanho da unidade de medida "rem" de preenchimento à esquerda e à direita. */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* é aplicada a um container flexível e alinha os itens desse container ao longo do eixo transversal (verticalmente, se o eixo principal for horizontal e horizontalmente, se o eixo principal for vertical) de modo que eles fiquem centralizados em relação a esse eixo. */
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
